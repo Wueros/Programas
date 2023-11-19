@@ -126,7 +126,8 @@ namespace Juego1P
             this.Controls.Add(this.PanelP2);
             this.Controls.Add(this.PanelP1);
             this.Name = "F1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Pinche suprimir me borraste el codigo";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.F1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

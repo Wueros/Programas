@@ -65,6 +65,7 @@ namespace Juego1P
             VidaContrario.Width = 520;
             PanelContrario_SetGet.Enabled = false;
             PanelEnTurno_SetGet.Enabled = true;
+           
         }
 
 

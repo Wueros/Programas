@@ -39,6 +39,7 @@ namespace Juego1P
                     PanelP2.Controls.Add(TarjetasArreglo[i]);
                     TarjetasArreglo[i].Vando = false;
                     TarjetasArreglo[i].ImagenTarjeta(TarjetasArreglo[i], TarjetSelected);
+                    TarjetasArreglo[i].Image = Juego1P.Properties.Resources.Reverso;
                 }
                 TarjetasArreglo[i].Click += F1_Click;
                 i++;
@@ -57,6 +58,8 @@ namespace Juego1P
             {
                 t.ImagenTarjeta(t,TarjetSelected);
                 SeleccionCarta(t);
+                if (t.Parent.Enabled == false)
+                    t.Image = Juego1P.Properties.Resources.Reverso;
             }
 
         }
@@ -125,10 +128,7 @@ namespace Juego1P
                         TarjetSelected.Tarselected = null;
                         TarjetSelected = null;
                     }
-                    foreach (Tarjetas tar in TarjetasArreglo)
-                    {
-                        tar.AdaptarTamaño(tar, tar.Parent);
-                    }
+                  
                     TarjetasArreglo[i].Click += F1_Click;
 
                     i++;
@@ -139,6 +139,20 @@ namespace Juego1P
                 else TarjetSelected = TarjetasArreglo[0];
                 TarjetSelected.ImagenTarjeta(TarjetSelected, TarjetSelected);
                 SeleccionCarta(TarjetSelected);
+                 i = 0;
+                foreach (Tarjetas tar in TarjetasArreglo)
+                {
+                    if (TarjetasArreglo[i].Parent.Enabled == false)
+                    {
+                        TarjetasArreglo[i].Image = Juego1P.Properties.Resources.Reverso;
+                    }
+                    else
+                    {
+                        TarjetasArreglo[i].ImagenTarjeta(tar, TarjetSelected);
+                    }
+                        tar.AdaptarTamaño(tar, tar.Parent);
+                    i++;
+                }
             }
         }
     }

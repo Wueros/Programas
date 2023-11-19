@@ -17,7 +17,7 @@ namespace Juego1P
         {
             Tarselected = null;
             Parent = control;
-            Width = (control.Width / 4) - 15;
+            Width = (control.Width / 4) - 5;
             Height = control.Height;
             Dock = DockStyle.Left;
             SizeMode = PictureBoxSizeMode.Zoom;
@@ -54,6 +54,9 @@ namespace Juego1P
 
         public void ImagenTarjeta(Tarjetas tar, Tarjetas tarSelected)
         {
+
+
+
             if (tar == tarSelected)
             {
                 switch (tar.NumTarjeta)
@@ -92,6 +95,7 @@ namespace Juego1P
 
                 }
             }
+
             else
             {
                 switch (NumTarjeta)
@@ -127,7 +131,9 @@ namespace Juego1P
                         break;
 
                 }
+
             }
+
         }
 
 
@@ -208,7 +214,7 @@ namespace Juego1P
         public void AdaptarTamaño(Tarjetas tar, Control Contenedor)
         {
             
-                tar.Width = (Contenedor.Width / 4)-15 ;
+                tar.Width = (Contenedor.Width / 4)-5 ;
                 tar.Height = Contenedor.Height;
                 tar.Dock = DockStyle.Left;
         }
