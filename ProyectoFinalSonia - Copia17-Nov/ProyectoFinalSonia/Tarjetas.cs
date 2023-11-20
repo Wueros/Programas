@@ -17,12 +17,13 @@ namespace ProyectoFinalSonia
         {
             Tarselected = null;
             Parent = control;
-            Width = (control.Width / 4) - 5;
+            Width = (control.Width / 4) - 15;
             Height = control.Height;
             Dock = DockStyle.Left;
             SizeMode = PictureBoxSizeMode.Zoom;
             NumTarjeta = numTar;
             this.Click += Tarjetas_Click;
+            
         }
         private Tarjetas tarjeta;
 
@@ -214,7 +215,7 @@ namespace ProyectoFinalSonia
         public void AdaptarTamaño(Tarjetas tar, Control Contenedor)
         {
 
-            tar.Width = (Contenedor.Width / 4) - 5;
+            tar.Width = (Contenedor.Width / 4) - 15;
             tar.Height = Contenedor.Height;
             tar.Dock = DockStyle.Left;
         }

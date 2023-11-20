@@ -32,12 +32,12 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.VidaP1 = new System.Windows.Forms.ProgressBar();
+            this.VidaP2 = new System.Windows.Forms.ProgressBar();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelP2 = new System.Windows.Forms.Panel();
+            this.PanelP1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -89,19 +89,19 @@
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
             // 
-            // progressBar1
+            // VidaP1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(118, 26);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(482, 65);
-            this.progressBar1.TabIndex = 25;
+            this.VidaP1.Location = new System.Drawing.Point(118, 26);
+            this.VidaP1.Name = "VidaP1";
+            this.VidaP1.Size = new System.Drawing.Size(482, 65);
+            this.VidaP1.TabIndex = 25;
             // 
-            // progressBar2
+            // VidaP2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(750, 26);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(482, 65);
-            this.progressBar2.TabIndex = 26;
+            this.VidaP2.Location = new System.Drawing.Point(750, 26);
+            this.VidaP2.Name = "VidaP2";
+            this.VidaP2.Size = new System.Drawing.Size(482, 65);
+            this.VidaP2.TabIndex = 26;
             // 
             // pictureBox4
             // 
@@ -125,19 +125,21 @@
             this.pictureBox6.TabIndex = 28;
             this.pictureBox6.TabStop = false;
             // 
-            // panel2
+            // PanelP2
             // 
-            this.panel2.Location = new System.Drawing.Point(575, 118);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 31;
+            this.PanelP2.BackColor = System.Drawing.Color.Transparent;
+            this.PanelP2.Location = new System.Drawing.Point(575, 118);
+            this.PanelP2.Name = "PanelP2";
+            this.PanelP2.Size = new System.Drawing.Size(200, 100);
+            this.PanelP2.TabIndex = 31;
             // 
-            // panel1
+            // PanelP1
             // 
-            this.panel1.Location = new System.Drawing.Point(394, 439);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(561, 274);
-            this.panel1.TabIndex = 32;
+            this.PanelP1.BackColor = System.Drawing.Color.Transparent;
+            this.PanelP1.Location = new System.Drawing.Point(394, 365);
+            this.PanelP1.Name = "PanelP1";
+            this.PanelP1.Size = new System.Drawing.Size(570, 340);
+            this.PanelP1.TabIndex = 32;
             // 
             // Juego
             // 
@@ -147,12 +149,12 @@
             this.BackgroundImage = global::ProyectoFinalSonia.Properties.Resources.aof3quixotic_temple2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 713);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.PanelP1);
+            this.Controls.Add(this.PanelP2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.VidaP2);
+            this.Controls.Add(this.VidaP1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox5);
@@ -161,6 +163,7 @@
             this.Name = "Juego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juego";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Juego_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -177,11 +180,11 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar VidaP1;
+        private System.Windows.Forms.ProgressBar VidaP2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelP2;
+        private System.Windows.Forms.Panel PanelP1;
     }
 }

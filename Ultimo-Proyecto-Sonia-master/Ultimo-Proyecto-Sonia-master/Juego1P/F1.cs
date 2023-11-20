@@ -153,6 +153,8 @@ namespace Juego1P
                         tar.AdaptarTamaño(tar, tar.Parent);
                     i++;
                 }
+                SeleccionCarta(TarjetSelected);
+
             }
         }
     }
