@@ -21,6 +21,7 @@ namespace ProyectoFinalSonia
         public Juego()
         {
             InitializeComponent();
+            Tim.Start();
             juego = new LogicaJuego(PanelP1, PanelP2, VidaP1, VidaP2);
             TarjetSelected = new Tarjetas();
             int i = 0;
@@ -76,11 +77,69 @@ namespace ProyectoFinalSonia
 
             }
         }
+        int i = 120;
+        private void Tim_Tick(object sender, EventArgs e)
+        {
+            if (i == 0)
+            {
+                if (VidaP1.Value > VidaP2.Value)
+                {
+                    ///Gana jugador 1
+                }
+                else
+                {
+                    ///Gana jugador 2
+                }
+                LTiempo.Text = "00";
+                Tim.Stop();
+            }
+            else
+            LTiempo.Text = i.ToString();
+            i--;
+        }
+        int j = 1;
+        private void Animacion_Tick(object sender, EventArgs e)
+        {
+            if(j != 3)
+            {
+                foreach (Tarjetas tar in TarjetasArreglo)
+                    tar.Image = ProyectoFinalSonia.Properties.Resources.Reverso;
+                PanelP1.Enabled = PanelP2.Enabled = false;
+            }
+            else
+            {
+                int a = 0;
+                foreach (Tarjetas tar in TarjetasArreglo)
+                {
+                    if (TarjetasArreglo[a].Parent == juego.PanelContrario_SetGet)
+                    {
+                        TarjetasArreglo[a].Image = ProyectoFinalSonia.Properties.Resources.Reverso;
+                    }
+                    else
+                    {
+                        TarjetasArreglo[a].ImagenTarjeta(tar, TarjetSelected);
+                    }
+                    tar.AdaptarTamaño(tar, tar.Parent);
+                    a++;
+                }
+                if (PanelP1 == juego.PanelContrario_SetGet) TarjetSelected = TarjetasArreglo[4];
+                else TarjetSelected = TarjetasArreglo[0];
+                TarjetSelected.ImagenTarjeta(TarjetSelected, TarjetSelected);
+                Animacion.Stop();
+                SeleccionCarta(TarjetSelected);
+                PanelP1.Enabled = PanelP2.Enabled = true;
+                PanelP1.Visible = true;
+                PanelP2.Visible = true;
+            }
+            j++;
+        }
 
         private void Juego_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.K)
             {
+                PanelP1.Visible = false;
+                PanelP2.Visible = false;
                 if (TarjetSelected == null)
                 {
                     if (PanelP1 == juego.PanelEnTurno_SetGet) TarjetSelected = TarjetasArreglo[0];
@@ -134,26 +193,9 @@ namespace ProyectoFinalSonia
 
                     i++;
                 }
-
-                if (PanelP1 == juego.PanelContrario_SetGet) TarjetSelected = TarjetasArreglo[4];
-                else TarjetSelected = TarjetasArreglo[0];
-                TarjetSelected.ImagenTarjeta(TarjetSelected, TarjetSelected);
                 i = 0;
-                foreach (Tarjetas tar in TarjetasArreglo)
-                {
-                    if (TarjetasArreglo[i].Parent == juego.PanelContrario_SetGet)
-                    {
-                        TarjetasArreglo[i].Image = ProyectoFinalSonia.Properties.Resources.Reverso;
-                    }
-                    else
-                    {
-                        TarjetasArreglo[i].ImagenTarjeta(tar, TarjetSelected);
-                    }
-                    tar.AdaptarTamaño(tar, tar.Parent);
-                    i++;
-                }
-                SeleccionCarta(TarjetSelected);
-
+                j = 1;
+                Animacion.Start();
             }
         }
     }

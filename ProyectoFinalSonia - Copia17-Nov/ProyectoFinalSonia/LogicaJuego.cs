@@ -20,10 +20,10 @@ namespace ProyectoFinalSonia
             VidaContrario = VidaP2;
             VidaEnTurno.Value = 100; VidaContrario.Value = 100;
             //Cambio de tamaño para identificar el turno
-            VidaEnTurno.Height = 50;
-            VidaEnTurno.Width = 530;
-            VidaContrario.Height = 40;
-            VidaContrario.Width = 520;
+            VidaEnTurno.Height = 65;
+            VidaEnTurno.Width = 480;
+            VidaContrario.Height = 50;
+            VidaContrario.Width = 480;
         }
         public void UsoTarjeta(Tarjetas TarjetaSelect)
         {
@@ -60,9 +60,9 @@ namespace ProyectoFinalSonia
             PanelEnTurno_SetGet.Height = 340;
             PanelEnTurno_SetGet.Width = 570;
             VidaEnTurno.Height = 65;
-            VidaEnTurno.Width = 482;
+            VidaEnTurno.Width = 480;
             VidaContrario.Height = 50;
-            VidaContrario.Width = 482;
+            VidaContrario.Width = 480;
             PanelContrario_SetGet.Enabled = false;
             PanelEnTurno_SetGet.Enabled = true;
 
