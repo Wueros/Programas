@@ -270,6 +270,93 @@
   <ItemGroup>
     <None Include="Resources\85315938-icono-de-signo-de-interrogación.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillanEspecial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillanEspecialSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillanNv3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillanNv3Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillanNv4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillanNv4Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillnv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillnv1Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillnv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackVillnv2Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EscudoVill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EscudoVillSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VidaVill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VidaVillSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackHeroeNv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackHeroeNv1Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackHeroeNv3 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackHeroeNv3Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackNv2Heroes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtackNv2HeroesSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atacknv4Heroe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atacknv4HeroeSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EscudoHeroes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EscudoHeroesSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EspecialHeroes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EspecialHeroesSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reverso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VidaHeores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VidaHeoresSeleccion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
