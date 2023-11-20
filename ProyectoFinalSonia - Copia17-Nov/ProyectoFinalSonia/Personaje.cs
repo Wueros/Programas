@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 namespace ProyectoFinalSonia
 {
     public class Personaje:PictureBox
@@ -14,13 +15,19 @@ namespace ProyectoFinalSonia
             this.PanelHeroes = PanelHeroes;
             this.PanelVillanos = PanelVillanos;
             this.Parent = con;
-            Width = Height = 100;
+            Width = Height = 110;
             SizeMode = PictureBoxSizeMode.StretchImage;
-            Top = Left = 00;
             con.Controls.Add(this);
             NumPersonaje = numP;
-            CargarImagen(this);
+            this.BackColor = Color.Red;
+            this.Click += Personaje_Click;
         }
+
+        private void Personaje_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private int numPersonaje;
 
         public int NumPersonaje
@@ -34,23 +41,23 @@ namespace ProyectoFinalSonia
             switch (pers.NumPersonaje)
             {
                 case 1:
-                    if (Vando(pers)) pers.Image = ProyectoFinalSonia.Properties.Resources.gwen;
+                    if (pers.PersonajeVando) pers.Image = ProyectoFinalSonia.Properties.Resources.gwen;
                     else pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
                     break;
                 case 2:
-                    if (Vando(pers)) pers.Image = ProyectoFinalSonia.Properties.Resources.hobie_brown;
+                    if (pers.PersonajeVando) pers.Image = ProyectoFinalSonia.Properties.Resources.hobie_brown;
                     else pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
                     break;
                 case 3:
-                    if (Vando(pers)) pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
+                    if (pers.PersonajeVando) pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
                     else pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
                     break;
                 case 4:
-                    if (Vando(pers)) pers.Image = ProyectoFinalSonia.Properties.Resources.miles_morales_CARA;
+                    if (pers.PersonajeVando) pers.Image = ProyectoFinalSonia.Properties.Resources.miles_morales_CARA;
                     else pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
                     break;
                 case 5:
-                    if (Vando(pers)) pers.Image = ProyectoFinalSonia.Properties.Resources.piterman;
+                    if (pers.PersonajeVando) pers.Image = ProyectoFinalSonia.Properties.Resources.piterman;
                     else pers.Image = ProyectoFinalSonia.Properties.Resources.miguelitoO;
                     break;
                 case 6:
@@ -58,13 +65,12 @@ namespace ProyectoFinalSonia
                     break;
             }
         }
-        public bool Vando(Personaje pers)
+        private bool vando;
+
+        public bool PersonajeVando
         {
-            if (pers.Parent == PanelHeroes)
-            {
-                return true;//heroes
-            }
-            else return false;//villanos
+            get { return vando; }
+            set { vando = value; }
         }
     }
 }

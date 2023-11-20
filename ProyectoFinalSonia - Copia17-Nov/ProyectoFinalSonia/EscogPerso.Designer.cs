@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PBHeroes = new System.Windows.Forms.PictureBox();
+            this.PBVillanos = new System.Windows.Forms.PictureBox();
             this.PanelVillanos = new System.Windows.Forms.Panel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.PanelHeroes = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBHeroes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBVillanos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,27 +54,27 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox2
+            // PBHeroes
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::ProyectoFinalSonia.Properties.Resources.Miles_Morales;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(329, 336);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            this.PBHeroes.BackColor = System.Drawing.Color.Transparent;
+            this.PBHeroes.Image = global::ProyectoFinalSonia.Properties.Resources.Miles_Morales;
+            this.PBHeroes.Location = new System.Drawing.Point(12, 12);
+            this.PBHeroes.Name = "PBHeroes";
+            this.PBHeroes.Size = new System.Drawing.Size(329, 336);
+            this.PBHeroes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBHeroes.TabIndex = 9;
+            this.PBHeroes.TabStop = false;
             // 
-            // pictureBox3
+            // PBVillanos
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::ProyectoFinalSonia.Properties.Resources.Miguel_Ohara;
-            this.pictureBox3.Location = new System.Drawing.Point(1009, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(329, 336);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            this.PBVillanos.BackColor = System.Drawing.Color.Transparent;
+            this.PBVillanos.Image = global::ProyectoFinalSonia.Properties.Resources.Miguel_Ohara;
+            this.PBVillanos.Location = new System.Drawing.Point(1009, 12);
+            this.PBVillanos.Name = "PBVillanos";
+            this.PBVillanos.Size = new System.Drawing.Size(329, 336);
+            this.PBVillanos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBVillanos.TabIndex = 10;
+            this.PBVillanos.TabStop = false;
             // 
             // PanelVillanos
             // 
@@ -113,8 +113,8 @@
             this.ClientSize = new System.Drawing.Size(1350, 750);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.PanelVillanos);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.PBVillanos);
+            this.Controls.Add(this.PBHeroes);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.PanelHeroes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -122,8 +122,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EscogPerso";
             this.Load += new System.EventHandler(this.EscogPerso_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBHeroes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBVillanos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
@@ -131,8 +131,8 @@
 
         #endregion
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox PBHeroes;
+        private System.Windows.Forms.PictureBox PBVillanos;
         private System.Windows.Forms.Panel PanelVillanos;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel PanelHeroes;
