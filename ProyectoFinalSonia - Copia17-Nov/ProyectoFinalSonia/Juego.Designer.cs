@@ -36,6 +36,8 @@
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -123,6 +125,20 @@
             this.pictureBox6.TabIndex = 28;
             this.pictureBox6.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(575, 118);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 31;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(394, 439);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(561, 274);
+            this.panel1.TabIndex = 32;
+            // 
             // Juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +147,8 @@
             this.BackgroundImage = global::ProyectoFinalSonia.Properties.Resources.aof3quixotic_temple2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 713);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.progressBar2);
@@ -163,5 +181,7 @@
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
