@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EAB2CE6-CC72-4CB2-8318-D2F09B93A61C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoFinalSonia</RootNamespace>
+    <AssemblyName>ProyectoFinalSonia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Escenarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Escenarios.Designer.cs">
+      <DependentUpon>Escenarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EscogPerso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscogPerso.Designer.cs">
+      <DependentUpon>EscogPerso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ganaste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ganaste.Designer.cs">
+      <DependentUpon>Ganaste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioJuego.Designer.cs">
+      <DependentUpon>InicioJuego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Juego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego.Designer.cs">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModoJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModoJuego.Designer.cs">
+      <DependentUpon>ModoJuego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaCarga.Designer.cs">
+      <DependentUpon>PantallaCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perdiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perdiste.Designer.cs">
+      <DependentUpon>Perdiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Winner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winner.Designer.cs">
+      <DependentUpon>Winner.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Escenarios.resx">
+      <DependentUpon>Escenarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscogPerso.resx">
+      <DependentUpon>EscogPerso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ganaste.resx">
+      <DependentUpon>Ganaste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioJuego.resx">
+      <DependentUpon>InicioJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Juego.resx">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModoJuego.resx">
+      <DependentUpon>ModoJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaCarga.resx">
+      <DependentUpon>PantallaCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perdiste.resx">
+      <DependentUpon>Perdiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Winner.resx">
+      <DependentUpon>Winner.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7ece69a786ba06d783e0360943c94790.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameover %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\905a3bb24d57eff785e578cef4f52afc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Piskel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miles Morales.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aof3quixotic-temple2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DO2WA2J.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1JBT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2JBT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extras7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extras5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extras6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptarBT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aleatorioBT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepe5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miguel Ohara.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extras11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extras4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gwen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hobie brown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miguelitoO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miles morales-CARA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piterman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29e3eb3eb48e6880af63f512a93a1e09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0dd99002f0569f5edac51756d33ada42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\85315938-icono-de-signo-de-interrogación.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
