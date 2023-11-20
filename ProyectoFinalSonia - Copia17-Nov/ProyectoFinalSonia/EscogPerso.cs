@@ -12,9 +12,23 @@ namespace ProyectoFinalSonia
 {
     public partial class EscogPerso : Form
     {
+        Personaje[] personajesArreglo = new Personaje[12];
         public EscogPerso()
         {
             InitializeComponent();
+            int i = 0;
+            foreach(Personaje per in personajesArreglo)
+            {
+                if (i < 6)
+                {
+                    personajesArreglo[i] = new Personaje(PanelHeroes, PanelHeroes, PanelVillanos, i + 1);
+                }
+                else
+                {
+                    personajesArreglo[i] = new Personaje(PanelHeroes, PanelHeroes, PanelVillanos, i + 1);
+                }
+                i++;
+            }
         }  
         private void button2_Click(object sender, EventArgs e)
         {
