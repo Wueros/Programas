@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProyectoFinalSonia</RootNamespace>
     <AssemblyName>ProyectoFinalSonia</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -78,6 +78,7 @@
       <DependentUpon>Juego.cs</DependentUpon>
     </Compile>
     <Compile Include="LogicaJuego.cs" />
+    <Compile Include="Mapas.cs" />
     <Compile Include="ModoJuego.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +364,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VidaHeoresSeleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spider-Ponk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpiderMan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gwen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miguel Ohara1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miguel Ohara2.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

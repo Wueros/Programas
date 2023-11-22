@@ -57,7 +57,7 @@
             // PBHeroes
             // 
             this.PBHeroes.BackColor = System.Drawing.Color.Transparent;
-            this.PBHeroes.Image = global::ProyectoFinalSonia.Properties.Resources.Miles_Morales;
+            this.PBHeroes.Image = global::ProyectoFinalSonia.Properties.Resources.Miguel_Ohara1;
             this.PBHeroes.Location = new System.Drawing.Point(12, 12);
             this.PBHeroes.Name = "PBHeroes";
             this.PBHeroes.Size = new System.Drawing.Size(329, 336);

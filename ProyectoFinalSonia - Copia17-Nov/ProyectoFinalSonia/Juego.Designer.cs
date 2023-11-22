@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PBFondo = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PbPersonajeP1 = new System.Windows.Forms.PictureBox();
+            this.PbPersonajeP2 = new System.Windows.Forms.PictureBox();
             this.VidaP1 = new System.Windows.Forms.ProgressBar();
             this.VidaP2 = new System.Windows.Forms.ProgressBar();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -42,8 +42,8 @@
             this.Tim = new System.Windows.Forms.Timer(this.components);
             this.Animacion = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PBFondo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbPersonajeP1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbPersonajeP2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
@@ -60,27 +60,27 @@
             this.PBFondo.TabIndex = 0;
             this.PBFondo.TabStop = false;
             // 
-            // pictureBox5
+            // PbPersonajeP1
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox5.BackgroundImage = global::ProyectoFinalSonia.Properties.Resources.piterman;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox5.TabIndex = 22;
-            this.pictureBox5.TabStop = false;
+            this.PbPersonajeP1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PbPersonajeP1.BackgroundImage = global::ProyectoFinalSonia.Properties.Resources.piterman;
+            this.PbPersonajeP1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PbPersonajeP1.Location = new System.Drawing.Point(12, 12);
+            this.PbPersonajeP1.Name = "PbPersonajeP1";
+            this.PbPersonajeP1.Size = new System.Drawing.Size(100, 100);
+            this.PbPersonajeP1.TabIndex = 22;
+            this.PbPersonajeP1.TabStop = false;
             // 
-            // pictureBox3
+            // PbPersonajeP2
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox3.BackgroundImage = global::ProyectoFinalSonia.Properties.Resources.miles_morales_CARA;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(1238, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
+            this.PbPersonajeP2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PbPersonajeP2.BackgroundImage = global::ProyectoFinalSonia.Properties.Resources.miles_morales_CARA;
+            this.PbPersonajeP2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PbPersonajeP2.Location = new System.Drawing.Point(1238, 12);
+            this.PbPersonajeP2.Name = "PbPersonajeP2";
+            this.PbPersonajeP2.Size = new System.Drawing.Size(100, 100);
+            this.PbPersonajeP2.TabIndex = 23;
+            this.PbPersonajeP2.TabStop = false;
             // 
             // VidaP1
             // 
@@ -175,8 +175,8 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.VidaP2);
             this.Controls.Add(this.VidaP1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.PbPersonajeP2);
+            this.Controls.Add(this.PbPersonajeP1);
             this.Controls.Add(this.PBFondo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Juego";
@@ -184,8 +184,8 @@
             this.Text = "Juego";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Juego_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.PBFondo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbPersonajeP1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbPersonajeP2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
@@ -196,8 +196,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox PBFondo;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox PbPersonajeP1;
+        private System.Windows.Forms.PictureBox PbPersonajeP2;
         private System.Windows.Forms.ProgressBar VidaP1;
         private System.Windows.Forms.ProgressBar VidaP2;
         private System.Windows.Forms.PictureBox pictureBox4;

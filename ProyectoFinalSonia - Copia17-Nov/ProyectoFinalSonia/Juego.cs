@@ -18,11 +18,18 @@ namespace ProyectoFinalSonia
         Tarjetas TarjetSelected;
         Random r = new Random();
         bool escudoP1 = false, escudoP2 = false;
-        public Juego()
+
+        public Juego(Image P1,Image P2,Image mapa)
         {
             InitializeComponent();
             Tim.Start();
             juego = new LogicaJuego(PanelP1, PanelP2, VidaP1, VidaP2);
+            PBFondo.Image = mapa;
+            this.BackgroundImage = mapa;
+            PbPersonajeP1.Image = P1;
+            PbPersonajeP2.Image = P2;
+            PbPersonajeP1.SizeMode = PictureBoxSizeMode.StretchImage;
+            PbPersonajeP2.SizeMode = PictureBoxSizeMode.StretchImage;
             TarjetSelected = new Tarjetas();
             int i = 0;
             foreach (Tarjetas tar in TarjetasArreglo)
@@ -85,16 +92,40 @@ namespace ProyectoFinalSonia
                 if (VidaP1.Value > VidaP2.Value)
                 {
                     ///Gana jugador 1
+                    MessageBox.Show("Gana el P1");
                 }
                 else
                 {
+                    MessageBox.Show("Gana el P2");
                     ///Gana jugador 2
                 }
+                PanelP1.Visible = false;
+                PanelP2.Visible = false;
                 LTiempo.Text = "00";
                 Tim.Stop();
             }
-            else
-            LTiempo.Text = i.ToString();
+            else 
+            {
+                if (VidaP1.Value == 0)
+                {
+                    MessageBox.Show("Gana el P2");
+                    PanelP1.Visible = false;
+                    PanelP2.Visible = false;
+                    Tim.Stop();
+
+                }
+                else if (VidaP2.Value == 0)
+                {
+                    MessageBox.Show("Gana el P1");
+                    PanelP1.Visible = false;
+                    PanelP2.Visible = false;
+                    Tim.Stop();
+                }
+              
+
+            }
+
+                LTiempo.Text = i.ToString();
             i--;
         }
         int j = 1;
